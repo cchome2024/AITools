@@ -7,4 +7,8 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+    // 其他配置项
+  server: {
+    allowedHosts: ['.chenchen.city'],
+  },
 });

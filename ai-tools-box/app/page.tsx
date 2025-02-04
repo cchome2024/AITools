@@ -1,5 +1,5 @@
-import { Tool, tools } from '../config/tools'
-import ToolCard from '../components/ToolCard'
+import { Tool, tools } from '@/config/tools'
+import ToolCard from '@/components/ToolCard'
 
 export default function Home() {
   return (

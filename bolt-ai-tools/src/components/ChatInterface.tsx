@@ -28,17 +28,50 @@ export function ChatInterface() {
     setInput('');
     setIsLoading(true);
 
+    try {
+      const response = await fetch('http://127.0.0.1:5000/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: input.trim() }),
+      });
+
+      if (!response.ok) {
+        // 处理非200响应
+        console.error('HTTP error:', response.status);
+      } else {
+        // 处理成功响应
+        const data = await response.json();
+        console.log('Response data:', data);
+        // 根据需要处理响应数据
+        const aiMessage: Message = {
+          id: (Date.now() + 1).toString(),
+          content: data.response,
+          isUser: false,
+          timestamp: new Date(),
+        };    
+        setMessages(prev => [...prev, aiMessage]);
+        setIsLoading(false);
+        return;
+      }
+      
+    } catch (error) {
+      // 处理网络错误
+      console.error('Fetch error:', error);
+    }
+
     // Simulate AI response (replace with actual API call)
     setTimeout(() => {
       const aiMessage: Message = {
         id: (Date.now() + 1).toString(),
-        content: "This is a simulated AI response. Replace this with actual API integration.",
+        content: "Thers is some mistake happened!",
         isUser: false,
         timestamp: new Date(),
       };
       setMessages(prev => [...prev, aiMessage]);
       setIsLoading(false);
-    }, 1000);
+    }, 10000);
   };
 
   return (
