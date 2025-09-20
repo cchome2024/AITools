@@ -1,0 +1,45 @@
+[
+  {
+    "id": "art-001",
+    "title": "Apple beats expectations with record iPhone revenue",
+    "content": "Apple $AAPL posted another quarter of record growth as iPhone demand surged. Analysts noted the company beat revenue and earnings forecasts while announcing an ambitious share buyback program.",
+    "tickers": ["AAPL"],
+    "social": {"shares": 1800, "likes": 950, "comments": 230}
+  },
+  {
+    "id": "art-002",
+    "title": "Tesla warns on margins amid aggressive price cuts",
+    "content": "Tesla (TSLA) delivered vehicles above guidance but warned that profit margins will decline after another round of price cuts. The company noted higher regulation costs in Europe and a potential slowdown in China.",
+    "tickers": ["TSLA"],
+    "engagement": {"shares": 900, "retweets": 300, "mentions": 120}
+  },
+  {
+    "id": "art-003",
+    "title": "Microsoft expands AI partnership with OpenAI",
+    "content": "Microsoft announced a new strategic partnership focused on cloud AI growth. The upgrade should accelerate Azure revenue and reflects bullish guidance from executives. Shares of MSFT rallied in after-hours trading.",
+    "tickers": ["MSFT"],
+    "social_shares": 600
+  },
+  {
+    "id": "art-004",
+    "title": "Johnson & Johnson faces lawsuit over talc products",
+    "content": "Johnson & Johnson (JNJ) is facing a new lawsuit alleging product safety issues. Analysts fear the litigation will pressure earnings and could lead to a large settlement. The downgrade follows previous regulatory warnings.",
+    "tickers": ["JNJ"],
+    "social": {"shares": 450, "likes": 120, "comments": 80}
+  },
+  {
+    "id": "art-005",
+    "title": "Amazon sees resilient holiday sales and upbeat guidance",
+    "content": "Amazon $AMZN reported resilient holiday demand with strong growth across its marketplace. Executives highlighted improving profit margins and upgraded guidance for the next quarter while expanding its partnership network.",
+    "tickers": ["AMZN"],
+    "social": {"shares": 1500, "likes": 700, "comments": 210}
+  },
+  {
+    "id": "art-006",
+    "title": "Bank sector watch: Wells Fargo and JPMorgan trading mixed",
+    "content": "Financial stocks were mixed as Wells Fargo WFC issued cautious guidance while JPMorgan $JPM reiterated bullish revenue targets. Analysts suggested watching for regulatory headlines and capital requirements updates.",
+    "tickers": ["WFC"],
+    "social": {"shares": 300, "likes": 140, "comments": 45},
+    "metadata": {"primary_ticker": "WFC"}
+  }
+]
